@@ -1,0 +1,10 @@
+import { PageHero, ImageFeature, CTASection, SectionIntro, SpecStrip } from "@/components/site/SiteBlocks";
+import { company } from "@/data/company";
+export const metadata = { title: "About Finocast", description: "Learn about Fino Cast Private Limited and its investment casting operation in Miraj, Maharashtra." };
+export default function AboutPage() { return <>
+  <PageHero eyebrow="About Finocast" title="A manufacturing partner, built around precision." body="Fino Cast Private Limited was established in 2020 to manufacture steel and alloy steel investment castings for industrial applications." image="/images/01_hero/hero_factory_interior.jpg" alt="Interior of a metal manufacturing facility"/>
+  <section className="section-block"><div className="wrap"><SectionIntro eyebrow="The company" title="A focused foundry in Miraj, Maharashtra." body="Finocast works with customers to develop investment cast components around their drawing, material and service requirements."/><SpecStrip items={[{label:"Established",value:"2020"},{label:"Core process",value:"Lost-wax investment casting"},{label:"Base",value:"Miraj, Maharashtra"}]}/></div></section>
+  <ImageFeature eyebrow="How we work" title="Engineering begins before the pour." body="A casting project includes more than the foundry step. Finocast’s published process begins with drawing and specification review, then moves through tooling, shell preparation, melting, finishing, inspection and dispatch planning." image="/images/08_team_and_workplace/team_worker_inspection.jpg" alt="Foundry worker examining a component" reverse link="/process" linkLabel="Explore the process"/>
+  <section className="section-block"><div className="wrap about-address"><div><p className="eyebrow">Our location</p><h2>Rooted in Miraj.<br/>Connected to industry.</h2></div><address>{company.addresses.factory.street}<br/>{company.addresses.factory.area}<br/>{company.addresses.factory.city}, {company.addresses.factory.state} {company.addresses.factory.postalCode}<br/>India</address></div></section>
+  <CTASection/>
+</>; }
