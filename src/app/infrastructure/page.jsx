@@ -30,7 +30,7 @@ export default function InfrastructurePage() {
         <div className="partner-list">{partnerCapabilities.map((item, index) => <article className="partner-row" key={item.title}><span>0{index + 1}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></article>)}</div>
       </div>
     </section>
-    <ImageFeature eyebrow="Location" title="The casting operation is based in Miraj." body="Finocast’s factory address is Plot no. 14, Miraj MIDC, Miraj, Sangli district, Maharashtra 416410, India. Partner-supported work may take place outside this facility." image="/images/03_foundry_factory/factory_exterior.jpg" alt="Illustrative industrial foundry exterior; not a photograph of Finocast’s facility" reverse link="/contact" linkLabel="Get contact details" />
+    <ImageFeature eyebrow="Location" title="The casting operation is based in Miraj." body="Finocast’s factory address is Plot no. 14, Miraj MIDC, Miraj, Sangli district, Maharashtra 416410, India. Partner-supported work may take place outside this facility." image="/images/03_foundry_factory/factory_exterior.png" alt="Illustrative industrial foundry exterior; not a photograph of Finocast’s facility" reverse link="/contact" linkLabel="Get contact details" />
     <CTASection />
   </>;
 }
